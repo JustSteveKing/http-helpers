@@ -1,11 +1,15 @@
 includes:
-  - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
+    - vendor/thecodingmachine/phpstan-safe-rule/phpstan-safe-rule.neon
 
 parameters:
-  level: 9
 
-  paths:
-    - src
+    paths:
+        - src/
 
-checkMissingIterableValueType: false
-  inferPrivatePropertyTypeFromConstructor: true
+    level: 9
+
+    ignoreErrors:
+
+    excludePaths:
+
+    checkMissingIterableValueType: false
