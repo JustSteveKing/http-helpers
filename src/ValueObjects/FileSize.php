@@ -7,10 +7,10 @@ namespace JustSteveKing\HttpHelpers\ValueObjects;
 use JustSteveKing\HttpHelpers\Contracts\ValueObjects\ValueObjectContract;
 use JustSteveKing\HttpHelpers\Exceptions\FileDoesNotExist;
 
-final class FileSize implements ValueObjectContract
+final readonly class FileSize implements ValueObjectContract
 {
     public function __construct(
-        public readonly int $size,
+        public int $size,
     ) {}
 
     public function bytes(): int

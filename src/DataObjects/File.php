@@ -7,13 +7,13 @@ namespace JustSteveKing\HttpHelpers\DataObjects;
 use JustSteveKing\HttpHelpers\Exceptions\CannotParseFile;
 use JustSteveKing\HttpHelpers\Exceptions\FileDoesNotExist;
 
-final class File
+final readonly class File
 {
     public function __construct(
-        public readonly string $directory,
-        public readonly string $name,
-        public readonly string $extension,
-        public readonly string $filename,
+        public string $directory,
+        public string $name,
+        public string $extension,
+        public string $filename,
     ) {}
 
     public static function fromPath(string $path): File
