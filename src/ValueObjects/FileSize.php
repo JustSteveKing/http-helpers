@@ -20,17 +20,17 @@ final class FileSize implements ValueObjectContract
 
     public function kilobytes(): int
     {
-        return $this->size * 1024;
+        return $this->size * 1_024;
     }
 
     public function megabytes(): int
     {
-        return $this->kilobytes() * 1024;
+        return $this->kilobytes() * 1_024;
     }
 
     public function gigabytes(): int
     {
-        return $this->megabytes() * 1024;
+        return $this->megabytes() * 1_024;
     }
 
     public static function fromPath(string $path): FileSize

@@ -46,7 +46,7 @@ it('can get the size in kilobytes', function (): void {
         (new FileSize(
             size: 1,
         ))->kilobytes(),
-    )->toBeInt()->toEqual(1024);
+    )->toBeInt()->toEqual(1_024);
 });
 
 it('can get the size in megabytes', function (): void {
@@ -54,7 +54,7 @@ it('can get the size in megabytes', function (): void {
         (new FileSize(
             size: 1,
         ))->megabytes(),
-    )->toBeInt()->toEqual(1024 * 1024);
+    )->toBeInt()->toEqual(1_024 * 1_024);
 });
 
 it('can get the size in gigabytes', function (): void {
@@ -62,6 +62,6 @@ it('can get the size in gigabytes', function (): void {
         (new FileSize(
             size: 1,
         ))->gigabytes(),
-    )->toBeInt()->toEqual(1024 * 1024 * 1024);
+    )->toBeInt()->toEqual(1_024 * 1_024 * 1_024);
 });
 
