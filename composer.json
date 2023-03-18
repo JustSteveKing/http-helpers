@@ -13,12 +13,12 @@
   ],
   "require": {
     "php": "^8.2",
-    "illuminate/support": "^10.4",
+    "illuminate/support": "^10.4.1",
     "juststeveking/parameterbag": "^2.0",
     "thecodingmachine/safe": "^2.4"
   },
   "require-dev": {
-    "pestphp/pest": "^1.22",
+    "pestphp/pest": "^1.22.6",
     "phpstan/phpstan": "^1.10.7",
     "thecodingmachine/phpstan-safe-rule": "^1.2"
   },
