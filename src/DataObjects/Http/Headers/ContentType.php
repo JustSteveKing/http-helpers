@@ -12,7 +12,8 @@ final class ContentType implements DataObjectContract
 {
     public function __construct(
         public readonly ContentTypeEnum $value,
-    ) {}
+    ) {
+    }
 
     public function toHeader(): Header
     {

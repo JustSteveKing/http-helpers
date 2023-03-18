@@ -11,7 +11,8 @@ final readonly class FileSize implements ValueObjectContract
 {
     public function __construct(
         public int $size,
-    ) {}
+    ) {
+    }
 
     public function bytes(): int
     {

@@ -16,7 +16,8 @@ final class URL implements DataObjectContract
         public Scheme $scheme,
         public string $host,
         public null|string $path = null,
-    ) {}
+    ) {
+    }
 
     public static function fromString(string $url): URL
     {

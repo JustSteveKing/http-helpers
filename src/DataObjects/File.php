@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace JustSteveKing\HttpHelpers\DataObjects;
 
-use JustSteveKing\HttpHelpers\Exceptions\CannotParseFile;
 use JustSteveKing\HttpHelpers\Exceptions\FileDoesNotExist;
 
 final readonly class File
@@ -14,7 +13,8 @@ final readonly class File
         public string $name,
         public string $extension,
         public string $filename,
-    ) {}
+    ) {
+    }
 
     public static function fromPath(string $path): File
     {

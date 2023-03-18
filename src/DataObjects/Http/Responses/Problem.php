@@ -25,7 +25,8 @@ final readonly class Problem implements DataObjectContract
         public int    $status,
         public string $detail,
         public string $instance,
-    ) {}
+    ) {
+    }
 
     public function toArray(): array
     {

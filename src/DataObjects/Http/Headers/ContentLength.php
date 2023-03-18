@@ -11,7 +11,8 @@ final readonly class ContentLength implements DataObjectContract
 {
     public function __construct(
         public int $value,
-    ) {}
+    ) {
+    }
 
     public function toHeader(): Header
     {

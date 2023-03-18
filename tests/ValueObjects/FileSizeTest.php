@@ -64,4 +64,3 @@ it('can get the size in gigabytes', function (): void {
         ))->gigabytes(),
     )->toBeInt()->toEqual(1_024 * 1_024 * 1_024);
 });
-

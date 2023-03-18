@@ -15,7 +15,8 @@ final readonly class Header implements DataObjectContract
     public function __construct(
         public string $key,
         public mixed $value,
-    ) {}
+    ) {
+    }
 
     /**
      * @return array

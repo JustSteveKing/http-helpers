@@ -12,7 +12,8 @@ final readonly class Accept implements DataObjectContract
 {
     public function __construct(
         public ContentType $value,
-    ) {}
+    ) {
+    }
 
     public function asHeader(): Header
     {

@@ -10,7 +10,8 @@ final readonly class Payload implements DataObjectContract
 {
     public function __construct(
         public array $data,
-    ) {}
+    ) {
+    }
 
     public function toArray(): array
     {

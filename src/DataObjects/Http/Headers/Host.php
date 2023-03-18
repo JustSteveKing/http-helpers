@@ -11,7 +11,8 @@ final readonly class Host implements DataObjectContract
 {
     public function __construct(
         public string $value,
-    ) {}
+    ) {
+    }
 
     public function toHeader(): Header
     {
