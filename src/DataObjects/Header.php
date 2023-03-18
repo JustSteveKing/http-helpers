@@ -13,8 +13,8 @@ final readonly class Header implements DataObjectContract
      * @param mixed $value
      */
     public function __construct(
-        private string $key,
-        private mixed $value,
+        public string $key,
+        public mixed $value,
     ) {}
 
     /**

@@ -6,18 +6,17 @@ namespace JustSteveKing\HttpHelpers\DataObjects\Http;
 
 use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 use JustSteveKing\HttpHelpers\DataObjects\Header;
-use JustSteveKing\HttpHelpers\Enums\ContentType;
 
-final readonly class Accept implements DataObjectContract
+final readonly class Host implements DataObjectContract
 {
     public function __construct(
-        public ContentType $value,
+        public string $value,
     ) {}
 
-    public function asHeader(): Header
+    public function toHeader(): Header
     {
         return new Header(
-            key: 'Accept',
+            key: 'Host',
             value: $this->value,
         );
     }
@@ -25,7 +24,7 @@ final readonly class Accept implements DataObjectContract
     public function toArray(): array
     {
         return [
-            'Accept' => $this->value->value,
+            'Host' => $this->value,
         ];
     }
 }

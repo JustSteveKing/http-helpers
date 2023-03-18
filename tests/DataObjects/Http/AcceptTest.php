@@ -9,7 +9,7 @@ use JustSteveKing\HttpHelpers\Enums\ContentType;
 it('can create a new accept header', function (): void {
     expect(
         new Accept(
-            type: ContentType::JSON,
+            value: ContentType::JSON,
         ),
     )->toBeInstanceOf(Accept::class);
 });
@@ -17,7 +17,7 @@ it('can create a new accept header', function (): void {
 it('can turn the accept header into a header', function (): void {
     expect(
         (new Accept(
-            type: ContentType::JSON,
+            value: ContentType::JSON,
         ))->asHeader(),
     )->toBeInstanceOf(Header::class);
 });
@@ -25,7 +25,7 @@ it('can turn the accept header into a header', function (): void {
 it('can turn the accept header into an array', function (): void {
     expect(
         (new Accept(
-            type: ContentType::JSON,
+            value: ContentType::JSON,
         ))->toArray(),
     )->toBeArray()->toEqual([
         'Accept' => 'application/json',

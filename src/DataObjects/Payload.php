@@ -9,7 +9,7 @@ use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 final readonly class Payload implements DataObjectContract
 {
     public function __construct(
-        private array $data,
+        public array $data,
     ) {}
 
     public function toArray(): array

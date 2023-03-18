@@ -7,10 +7,10 @@ namespace JustSteveKing\HttpHelpers\DataObjects\Http;
 use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 use JustSteveKing\HttpHelpers\DataObjects\Header;
 
-final class ContentLength implements DataObjectContract
+final readonly class ContentLength implements DataObjectContract
 {
     public function __construct(
-        private readonly int $value,
+        public int $value,
     ) {}
 
     public function toHeader(): Header
