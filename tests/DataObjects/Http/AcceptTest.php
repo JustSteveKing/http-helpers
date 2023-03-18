@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use JustSteveKing\HttpHelpers\DataObjects\Header;
-use JustSteveKing\HttpHelpers\DataObjects\Http\Accept;
+use JustSteveKing\HttpHelpers\DataObjects\Http\Headers\Accept;
 use JustSteveKing\HttpHelpers\Enums\ContentType;
 
 it('can create a new accept header', function (): void {

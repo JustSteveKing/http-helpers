@@ -2,21 +2,22 @@
 
 declare(strict_types=1);
 
-namespace JustSteveKing\HttpHelpers\DataObjects\Http;
+namespace JustSteveKing\HttpHelpers\DataObjects\Http\Headers;
 
 use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 use JustSteveKing\HttpHelpers\DataObjects\Header;
+use JustSteveKing\HttpHelpers\Enums\ContentType;
 
-final readonly class ContentLength implements DataObjectContract
+final readonly class Accept implements DataObjectContract
 {
     public function __construct(
-        public int $value,
+        public ContentType $value,
     ) {}
 
-    public function toHeader(): Header
+    public function asHeader(): Header
     {
         return new Header(
-            key: 'Content-Length',
+            key: 'Accept',
             value: $this->value,
         );
     }
@@ -24,7 +25,7 @@ final readonly class ContentLength implements DataObjectContract
     public function toArray(): array
     {
         return [
-            'Content-Length' => $this->value,
+            'Accept' => $this->value->value,
         ];
     }
 }

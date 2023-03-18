@@ -15,10 +15,16 @@
     "php": "^8.2",
     "illuminate/support": "^10.4.1",
     "juststeveking/parameterbag": "^2.0",
+    "php-http/client-common": "^2.6",
+    "php-http/discovery": "^1.15",
+    "php-http/mock-client": "^1.5",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0",
     "thecodingmachine/safe": "^2.4"
   },
   "require-dev": {
     "pestphp/pest": "^1.22.6",
+    "php-http/guzzle6-adapter": "^2.0",
     "phpstan/phpstan": "^1.10.7",
     "thecodingmachine/phpstan-safe-rule": "^1.2"
   },
@@ -47,7 +53,8 @@
     "sort-packages": true,
     "optimize-autoloader": true,
     "allow-plugins": {
-      "pestphp/pest-plugin": true
+      "pestphp/pest-plugin": true,
+      "php-http/discovery": true
     }
   },
   "minimum-stability": "dev",

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use JustSteveKing\HttpHelpers\DataObjects\Header;
-use JustSteveKing\HttpHelpers\DataObjects\Http\Host;
+use JustSteveKing\HttpHelpers\DataObjects\Http\Headers\Host;
 
 it('can create a new host', function (string $host): void {
     expect(

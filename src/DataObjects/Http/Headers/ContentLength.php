@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace JustSteveKing\HttpHelpers\DataObjects\Http;
+namespace JustSteveKing\HttpHelpers\DataObjects\Http\Headers;
 
 use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 use JustSteveKing\HttpHelpers\DataObjects\Header;
 
-final readonly class Host implements DataObjectContract
+final readonly class ContentLength implements DataObjectContract
 {
     public function __construct(
-        public string $value,
+        public int $value,
     ) {}
 
     public function toHeader(): Header
     {
         return new Header(
-            key: 'Host',
+            key: 'Content-Length',
             value: $this->value,
         );
     }
@@ -24,7 +24,7 @@ final readonly class Host implements DataObjectContract
     public function toArray(): array
     {
         return [
-            'Host' => $this->value,
+            'Content-Length' => $this->value,
         ];
     }
 }

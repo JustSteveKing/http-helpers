@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use JustSteveKing\HttpHelpers\DataObjects\Header;
-use JustSteveKing\HttpHelpers\DataObjects\Http\ContentLength;
+use JustSteveKing\HttpHelpers\DataObjects\Http\Headers\ContentLength;
 
 it('can create a new Content Length Object', function (int $number): void {
     expect(
