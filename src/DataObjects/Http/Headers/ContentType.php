@@ -6,7 +6,7 @@ namespace JustSteveKing\HttpHelpers\DataObjects\Http\Headers;
 
 use JustSteveKing\HttpHelpers\Contracts\DataObjects\DataObjectContract;
 use JustSteveKing\HttpHelpers\DataObjects\Header;
-use JustSteveKing\HttpHelpers\Enums\ContentType as ContentTypeEnum;
+use JustSteveKing\HttpHelpers\Enums\Headers\ContentType as ContentTypeEnum;
 
 final class ContentType implements DataObjectContract
 {

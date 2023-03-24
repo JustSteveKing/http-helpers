@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use JustSteveKing\HttpHelpers\DataObjects\Header;
 use JustSteveKing\HttpHelpers\DataObjects\Http\Headers\ContentType;
-use JustSteveKing\HttpHelpers\Enums\ContentType as ContentTypeEnum;
+use JustSteveKing\HttpHelpers\Enums\Headers\ContentType as ContentTypeEnum;
 
 it('can create a content type object', function (): void {
     expect(
