@@ -13,20 +13,20 @@
   ],
   "require": {
     "php": "^8.2",
-    "illuminate/support": "^10.4.1",
+    "illuminate/support": "^10.6.2",
     "juststeveking/parameterbag": "^2.0",
     "php-http/client-common": "^2.6",
-    "php-http/discovery": "^1.15",
+    "php-http/discovery": "^1.15.3",
     "php-http/mock-client": "^1.5",
-    "psr/http-client": "^1.0",
-    "psr/http-factory": "^1.0",
+    "psr/http-client": "^1.0.1",
+    "psr/http-factory": "^1.0.1",
     "thecodingmachine/safe": "^2.4"
   },
   "require-dev": {
-    "laravel/pint": "^1.6",
+    "laravel/pint": "^1.8",
     "pestphp/pest": "^1.22.6",
-    "php-http/guzzle6-adapter": "^2.0",
-    "phpstan/phpstan": "^1.10.7",
+    "php-http/guzzle6-adapter": "^2.0.2",
+    "phpstan/phpstan": "^1.10.11",
     "thecodingmachine/phpstan-safe-rule": "^1.2"
   },
   "autoload": {

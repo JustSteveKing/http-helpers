@@ -13,4 +13,5 @@ enum Method: string
     case DELETE = 'DELETE';
     case OPTIONS = 'OPTIONS';
     case HEAD = 'HEAD';
+    case TRACE = 'TRACE';
 }
